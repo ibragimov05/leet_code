@@ -8,7 +8,3 @@ class Solution:
             else:
                 return len(splitted_words[i])
         return 0
-
-
-s = Solution()
-print(s.lengthOfLastWord("   fly me   to   the moon  "))

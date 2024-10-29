@@ -12,12 +12,3 @@ class Solution:
             number = number // 2
 
         return bin
-
-
-s = Solution()
-print(s.convertDateToBinary("2080-02-29"))
-
-# Input: date = "2080-02-29"
-# Output: "100000100000-10-11101"
-# Explanation:
-# 100000100000, 10, and 11101 are the binary representations of 2080, 02, and 29 respectively.

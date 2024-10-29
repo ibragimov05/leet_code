@@ -7,8 +7,3 @@ class Solution:
                 count += 1
 
         return count
-
-
-s = Solution()
-print(s.numOfStrings(["a", "abc", "bc", "d"], "abc"))
-# => 3

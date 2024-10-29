@@ -5,7 +5,3 @@ class Solution:
             if stone in jewels:
                 jewels_count += 1
         return jewels_count
-
-
-s = Solution()
-print(s.numJewelsInStones("aA", "aAAbbbb"))
