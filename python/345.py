@@ -16,17 +16,3 @@ class Solution:
                 right -= 1
                 
         return "".join(chars)
-
-
-s = Solution()
-print(s.reverseVowels("IceCreAm"))
-
-# Example 1:
-# Input: s = "IceCreAm"
-# Output: "AceCreIm"
-# Explanation:
-# The vowels in s are ['I', 'e', 'e', 'A']. On reversing the vowels, s becomes "AceCreIm".
-
-# Example 2:
-# Input: s = "leetcode"
-# Output: "leotcede"
