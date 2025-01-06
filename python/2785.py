@@ -1,14 +1,6 @@
 class Solution:
 	def sortVowels(self, s: str) -> str:
 		vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}
-		vowels_ls = []
+		sorted_vowels = iter(sorted([char for char in s if char in vowels]))
 
-		for i in s:
-			if i in vowels:
-				vowels_ls.append(i)
-		print(vowels_ls)
-		return ''
-
-
-print(Solution().sortVowels("lEetcOde"))  # lEOtcede
-print(Solution().sortVowels("lYmpH"))  # lYmpH
+		return ''.join(next(sorted_vowels) if char in vowels else char for char in s)
