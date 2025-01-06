@@ -10,6 +10,5 @@ class Solution:
 		return ''
 
 
-
 print(Solution().sortVowels("lEetcOde"))  # lEOtcede
 print(Solution().sortVowels("lYmpH"))  # lYmpH
