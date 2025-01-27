@@ -2,6 +2,7 @@ class Solution:
 	def reverseStr(self, s: str, k: int) -> str:
 		return s[::k]
 
+
 print(Solution().reverseStr("abcdefg", 2))
 # Example 1:
 #
