@@ -10,16 +10,13 @@ char *reversePrefix(char *word, char ch)
   {
     if (word[i] == ch)
     {
-      contain = true;
-      prefix_index = i;
+      contain = true, prefix_index = i;
       break;
     }
   }
 
   if (!contain)
-  {
     return word;
-  }
 
   int l = 0;
   int r = prefix_index;
