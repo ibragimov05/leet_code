@@ -13,14 +13,32 @@ bool detectCapitalUse(char *word)
   {
     int char_letter = (int)word[i];
 
-    if (char_letter >= 65 && 90 >= char_letter)
+    if (!(char_letter >= 65 && 90 >= char_letter))
     {
+      all_capital = false;
+    }
+
+    if (!(char_letter >= 97 && 122 >= char_letter))
+    {
+      all_not_capital = false;
     }
   }
 
-  return all_capital || all_not_capital || is_first_capital;
-}
+  if (all_capital || all_not_capital)
+    return true;
 
-// class Solution:
-//     def detectCapitalUse(self, word: str) -> bool:
-//         return word.upper() == word or word.capitalize() == word or word.lower() == word
+  if ((int)word[0] >= 65 && 90 >= (int)word[0])
+  {
+    for (int i = 1; i < word_len; i++)
+    {
+      int char_letter = (int)word[i];
+      if (!(char_letter >= 97 && 122 >= char_letter))
+      {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  return false;
+}
