@@ -3,5 +3,6 @@
     "bitset": "c",
     "unordered_map": "c",
     "stdbool.h": "c"
-  }
+  },
+  "python.REPL.enableREPLSmartSend": false
 }
