@@ -7,8 +7,3 @@ class Solution:
                 return False
             n //= 2
         return True
-
-
-print(Solution().isPowerOfTwo(1))
-print(Solution().isPowerOfTwo(16))
-print(Solution().isPowerOfTwo(3))
