@@ -1,8 +1,5 @@
-#include <stdio.h>
-
 int countElements(int *nums, int numsSize)
 {
-  // Bubble sort (ascending order)
   for (int i = 0; i < numsSize - 1; i++)
   {
     for (int j = 0; j < numsSize - i - 1; j++)
