@@ -2,7 +2,9 @@ from typing import List
 
 
 class Solution:
-    def mergeArrays(self, nums1: List[List[int]], nums2: List[List[int]]) -> List[List[int]]:
+    def mergeArrays(
+        self, nums1: List[List[int]], nums2: List[List[int]]
+    ) -> List[List[int]]:
         merged_dict: dict[int, int] = {}
 
         for id_value, value in nums1:

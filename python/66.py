@@ -3,8 +3,8 @@ class Solution:
         res_str = str(int("".join(map(str, digits))) + 1)
 
         result: list[int] = []
-        
+
         for i in res_str:
             result.append(int(i))
-            
+
         return result

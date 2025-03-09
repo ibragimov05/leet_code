@@ -4,7 +4,9 @@ class Solution:
         x = abs(x)
         reversed_x = int(str(x)[::-1])
 
-        if not self.is_within_32_bit_range(reversed_x) or not self.is_within_32_bit_range(x):
+        if not self.is_within_32_bit_range(
+            reversed_x
+        ) or not self.is_within_32_bit_range(x):
             return 0
 
         return -reversed_x if is_negative else reversed_x

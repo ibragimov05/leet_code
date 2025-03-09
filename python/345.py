@@ -14,5 +14,5 @@ class Solution:
                 chars[left], chars[right] = chars[right], chars[left]
                 left += 1
                 right -= 1
-                
+
         return "".join(chars)

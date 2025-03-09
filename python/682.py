@@ -9,7 +9,7 @@ class Solution:
                 points.pop()
             elif op == "D":
                 nums: list[int] = []
-                
+
                 for j in range(operations.index(op) - 1, -1, -1):
                     if operations[j].isdigit():
                         nums.append(int(operations[j]))
