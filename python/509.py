@@ -15,4 +15,3 @@ class Solution:
             f2 = f3
 
         return f2
-
