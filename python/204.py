@@ -3,7 +3,7 @@ class Solution:
         if n < 2:
             return 0
 
-        primes = [True] * n
+        primes: list[bool] = [True] * n
         primes[0] = primes[1] = False
 
         for i in range(2, int(n**0.5) + 1):
