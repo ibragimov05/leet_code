@@ -13,9 +13,3 @@ func numJewelsInStones(jewels string, stones string) int {
 
 	return jewelsCount
 }
-
-// jewels_count = 0
-//         for stone in stones:
-//             if stone in jewels:
-//                 jewels_count += 1
-//         return jewels_count
