@@ -6,6 +6,7 @@ class Solution {
 
     for (var i = s.length - 1; i >= 0; i--) {
       int curVal = romanDict[s[i]] ?? 0;
+
       if (curVal < prevVal) {
         totalSum -= curVal;
       } else {
